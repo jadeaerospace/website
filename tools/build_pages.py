@@ -11,7 +11,7 @@ T = {
   title='Jade Aerospace | Satellites, ground stations and AI for Earth observation',
   desc='Jade Aerospace is a Hong Kong company building a full Earth observation chain: a 216-satellite constellation, licensed ground stations in Brazil, a calibration field and AI analysis.',
   ogdesc='Satellites, ground stations and AI, from orbit to the field.',
-  skip='Skip to content',
+  skip='Skip to content', themeLabel='Switch light / dark',
   nav=[('orbit','Constellation'),('ground','Ground stations'),('field','AgriEasy'),('proof','Work'),('team','Team')],
   contact='Contact',
   rail=[('orbit','Orbit'),('ground','Ground'),('calibration','Calibration'),('field','Field'),('proof','Proof'),('timeline','Timeline'),('team','Team'),('contact','Contact')],
@@ -92,7 +92,7 @@ T = {
   title='玉航天 Jade Aerospace | 卫星星座、地面站与 AI 遥感分析',
   desc='玉航天是一家香港公司，建设完整的对地观测链条：216 颗卫星星座、巴西已获许可的地面站、定标场，以及 AI 遥感分析。',
   ogdesc='卫星、地面站与 AI：从轨道到田间。',
-  skip='跳到正文',
+  skip='跳到正文', themeLabel='切换浅色 / 深色',
   nav=[('orbit','卫星星座'),('ground','地面站'),('field','农易'),('proof','项目'),('team','团队')],
   contact='联系我们',
   rail=[('orbit','轨道'),('ground','地面站'),('calibration','定标场'),('field','田间'),('proof','项目'),('timeline','历程'),('team','团队'),('contact','联系')],
@@ -216,7 +216,9 @@ def page(L):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{d['title']}</title>
 <meta name="description" content="{d['desc']}">
-<meta name="theme-color" content="#061418">
+<meta name="theme-color" content="#061418" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F4F7F6" media="(prefers-color-scheme: light)">
+<script>try{{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}}catch(e){{}}</script>
 <meta property="og:title" content="Jade Aerospace">
 <meta property="og:description" content="{d['ogdesc']}">
 <meta property="og:image" content="https://jadeaerospace.com/assets/hero-fields.jpg">
@@ -235,9 +237,10 @@ def page(L):
 <!-- ============ TOP BAR ============ -->
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="./"><img src="{A}logo-white.png" alt="Jade Aerospace"></a>
+    <a class="logo" href="./"><img class="on-dark" src="{A}logo-white.png" alt="Jade Aerospace"><img class="on-light" src="{A}logo-jade.png" alt="Jade Aerospace"></a>
     <nav>
       {nav}
+      <button type="button" class="theme" data-theme-toggle aria-label="{d['themeLabel']}" title="{d['themeLabel']}"><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 10.2A6 6 0 0 1 5.8 2.5a6 6 0 1 0 7.7 7.7Z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3 3l1.4 1.4M11.6 11.6 13 13M3 13l1.4-1.4M11.6 4.4 13 3" stroke="currentColor" stroke-width="1.3"/></svg></button>
       <a class="lang" href="{d['other']}" hreflang="{d['otherhreflang']}">{d['otherlabel']}</a>
       <a class="cta-top" href="#contact">{d['contact']}</a>
     </nav>

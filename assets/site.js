@@ -31,3 +31,16 @@
     if (el) spy.observe(el);
   });
 })();
+
+// Light / dark toggle: flips the effective theme and remembers it in this browser.
+(function () {
+  var btn = document.querySelector('[data-theme-toggle]');
+  if (!btn) return;
+  btn.addEventListener('click', function () {
+    var root = document.documentElement;
+    var now = root.dataset.theme || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    var next = now === 'light' ? 'dark' : 'light';
+    root.dataset.theme = next;
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+})();

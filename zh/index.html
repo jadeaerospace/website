@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>玉航天 Jade Aerospace | 卫星星座、地面站与 AI 遥感分析</title>
 <meta name="description" content="玉航天是一家香港公司，建设完整的对地观测链条：216 颗卫星星座、巴西已获许可的地面站、定标场，以及 AI 遥感分析。">
-<meta name="theme-color" content="#061418">
+<meta name="theme-color" content="#061418" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F4F7F6" media="(prefers-color-scheme: light)">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 <meta property="og:title" content="Jade Aerospace">
 <meta property="og:description" content="卫星、地面站与 AI：从轨道到田间。">
 <meta property="og:image" content="https://jadeaerospace.com/assets/hero-fields.jpg">
@@ -24,9 +26,10 @@
 <!-- ============ TOP BAR ============ -->
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="./"><img src="../assets/logo-white.png" alt="Jade Aerospace"></a>
+    <a class="logo" href="./"><img class="on-dark" src="../assets/logo-white.png" alt="Jade Aerospace"><img class="on-light" src="../assets/logo-jade.png" alt="Jade Aerospace"></a>
     <nav>
       <a href="#orbit">卫星星座</a><a href="#ground">地面站</a><a href="#field">农易</a><a href="#proof">项目</a><a href="#team">团队</a>
+      <button type="button" class="theme" data-theme-toggle aria-label="切换浅色 / 深色" title="切换浅色 / 深色"><svg class="moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 10.2A6 6 0 0 1 5.8 2.5a6 6 0 1 0 7.7 7.7Z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg class="sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3 3l1.4 1.4M11.6 11.6 13 13M3 13l1.4-1.4M11.6 4.4 13 3" stroke="currentColor" stroke-width="1.3"/></svg></button>
       <a class="lang" href="../" hreflang="en">EN</a>
       <a class="cta-top" href="#contact">联系我们</a>
     </nav>
