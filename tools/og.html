@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Noto+Sans+SC:wght@500&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;width:1200px;height:630px;background:#061418;overflow:hidden}
+.s{position:relative;width:1200px;height:630px;font-family:"Space Grotesk","Noto Sans SC",sans-serif;color:#F2F5F4}
+.s img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.s::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,20,24,.94) 0%,rgba(6,20,24,.8) 45%,rgba(6,20,24,.15) 100%)}
+.f{position:absolute;inset:28px;border:1px solid rgba(81,186,193,.45);z-index:2;
+ background:linear-gradient(#51BAC1,#51BAC1) top left/30px 3px,linear-gradient(#51BAC1,#51BAC1) top left/3px 30px,linear-gradient(#51BAC1,#51BAC1) top right/30px 3px,linear-gradient(#51BAC1,#51BAC1) top right/3px 30px,linear-gradient(#51BAC1,#51BAC1) bottom left/30px 3px,linear-gradient(#51BAC1,#51BAC1) bottom left/3px 30px,linear-gradient(#51BAC1,#51BAC1) bottom right/30px 3px,linear-gradient(#51BAC1,#51BAC1) bottom right/3px 30px;background-repeat:no-repeat}
+.c{position:absolute;z-index:3;left:76px;top:70px;bottom:70px;display:flex;flex-direction:column;justify-content:space-between}
+.logo{height:62px;width:auto}
+h1{font-size:92px;line-height:.98;letter-spacing:-.04em;font-weight:500;margin:0}
+:lang(zh) h1{letter-spacing:0;line-height:1.1}
+p{font:500 24px Manrope,"Noto Sans SC",sans-serif;color:#B9CBC9;margin:18px 0 0}
+.u{font-size:20px;letter-spacing:.06em;color:#51BAC1}
+</style></head><body><div class="s">
+<img class="bg" src="../assets/hero-fields.jpg"><div class="f"></div>
+<div class="c"><img class="logo" src="../assets/logo-white.png">
+<div><h1 id="h"></h1><p id="p"></p></div><div class="u">JADEAEROSPACE.COM</div></div></div>
+<script>
+var zh=location.search==='?zh';document.documentElement.lang=zh?'zh':'en';
+document.getElementById('h').innerHTML=zh?'从轨道<br>到田间。':'From orbit<br>to the field.';
+document.getElementById('p').textContent=zh?'卫星星座 · 巴西地面站 · AI 遥感分析 · 香港':'Satellites · ground stations in Brazil · AI · Hong Kong';
+</script></body></html>

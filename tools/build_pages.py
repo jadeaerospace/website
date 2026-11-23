@@ -10,7 +10,8 @@ T = {
   lang='en', p='', other='zh/', otherlabel='中文', otherhreflang='zh-Hans',
   title='Jade Aerospace | Satellites, ground stations and AI for Earth observation',
   desc='Jade Aerospace is a Hong Kong company building a full Earth observation chain: a 216-satellite constellation, licensed ground stations in Brazil, a calibration field and AI analysis.',
-  ogdesc='Satellites, ground stations and AI, from orbit to the field.',
+  ogdesc='A 216-satellite constellation, licensed ground stations in Brazil and AI analysis, built from Hong Kong.',
+  ogtitle='Jade Aerospace · From orbit to the field.', ogurl='https://jadeaerospace.com/',
   skip='Skip to content', themeLabel='Switch light / dark',
   nav=[('orbit','Constellation'),('ground','Ground stations'),('field','AgriEasy'),('proof','Work'),('team','Team')],
   contact='Contact',
@@ -91,7 +92,8 @@ T = {
   lang='zh-Hans', p='../', other='../', otherlabel='EN', otherhreflang='en',
   title='玉航天 Jade Aerospace | 卫星星座、地面站与 AI 遥感分析',
   desc='玉航天是一家香港公司，建设完整的对地观测链条：216 颗卫星星座、巴西已获许可的地面站、定标场，以及 AI 遥感分析。',
-  ogdesc='卫星、地面站与 AI：从轨道到田间。',
+  ogdesc='216 颗卫星星座、巴西已获许可的地面站与 AI 遥感分析，立足香港。',
+  ogtitle='玉航天 Jade Aerospace · 从轨道到田间。', ogurl='https://jadeaerospace.com/zh/',
   skip='跳到正文', themeLabel='切换浅色 / 深色',
   nav=[('orbit','卫星星座'),('ground','地面站'),('field','农易'),('proof','项目'),('team','团队')],
   contact='联系我们',
@@ -219,9 +221,19 @@ def page(L):
 <meta name="theme-color" content="#061418" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#F4F7F6" media="(prefers-color-scheme: light)">
 <script>try{{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}}catch(e){{}}</script>
-<meta property="og:title" content="Jade Aerospace">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jade Aerospace 玉航天">
+<meta property="og:url" content="{d['ogurl']}">
+<meta property="og:title" content="{d['ogtitle']}">
 <meta property="og:description" content="{d['ogdesc']}">
-<meta property="og:image" content="https://jadeaerospace.com/assets/hero-fields.jpg">
+<meta property="og:image" content="https://jadeaerospace.com/assets/og-{L}.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{d['ogtitle']}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{d['ogtitle']}">
+<meta name="twitter:description" content="{d['ogdesc']}">
+<meta name="twitter:image" content="https://jadeaerospace.com/assets/og-{L}.jpg">
 <link rel="alternate" hreflang="en" href="https://jadeaerospace.com/">
 <link rel="alternate" hreflang="zh-Hans" href="https://jadeaerospace.com/zh/">
 <link rel="icon" href="{A}logo-jade.png">
