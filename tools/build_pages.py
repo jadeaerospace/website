@@ -226,14 +226,14 @@ def page(L):
 <meta property="og:url" content="{d['ogurl']}">
 <meta property="og:title" content="{d['ogtitle']}">
 <meta property="og:description" content="{d['ogdesc']}">
-<meta property="og:image" content="https://jadeaerospace.com/assets/og-{L}.jpg">
+<meta property="og:image" content="https://jadeaerospace.com/assets/og-{L}.jpg?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="{d['ogtitle']}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{d['ogtitle']}">
 <meta name="twitter:description" content="{d['ogdesc']}">
-<meta name="twitter:image" content="https://jadeaerospace.com/assets/og-{L}.jpg">
+<meta name="twitter:image" content="https://jadeaerospace.com/assets/og-{L}.jpg?v=2">
 <link rel="alternate" hreflang="en" href="https://jadeaerospace.com/">
 <link rel="alternate" hreflang="zh-Hans" href="https://jadeaerospace.com/zh/">
 <link rel="icon" href="{A}logo-jade.png">
