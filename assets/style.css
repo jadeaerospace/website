@@ -175,3 +175,4 @@ img.globe{width:100%;max-width:480px;justify-self:center;border-radius:50%;box-s
 .hp{position:absolute;left:-9999px}
 @media (max-width:920px){.ctabox .cgrid{grid-template-columns:1fr}.cform .row{grid-template-columns:1fr}}
 section[id]{scroll-margin-top:90px}
+.gallery figure.wide img{aspect-ratio:16/9}
