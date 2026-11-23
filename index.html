@@ -220,12 +220,28 @@
 <section id="contact">
   <div class="wrap">
     <div class="ctabox">
-      <p class="kicker">Looking for partners</p>
-      <h2>Build the chain with us.</h2>
-      <p>We are talking to satellite makers and launch providers, ground station and calibration partners, satellite data suppliers, and banks, insurers and agribusiness who want answers from orbit.</p>
-      <div class="btns">
-        <a class="btn light" href="mailto:aila@alyaspace.com">Email Aila</a>
-        <a class="btn line" href="zh/">中文版</a>
+      <div class="cgrid">
+        <div>
+          <p class="kicker">Looking for partners</p>
+          <h2>Build the chain with us.</h2>
+          <p>We are talking to satellite makers and launch providers, ground station and calibration partners, satellite data suppliers, and banks, insurers and agribusiness who want answers from orbit.</p>
+          <div class="mailrow">
+            <code>aila@alyaspace.com</code>
+            <button type="button" class="btn light" data-copy>Copy email</button>
+          </div>
+          <div class="btns"><a class="btn line" href="zh/">中文版</a></div>
+        </div>
+        <form id="contact-form" class="cform">
+          <div class="row">
+            <label>Name<input name="name" required autocomplete="name"></label>
+            <label>Email<input name="email" type="email" required autocomplete="email"></label>
+          </div>
+          <label>Organisation<input name="org" autocomplete="organization"></label>
+          <label>Message<textarea name="message" required></textarea></label>
+          <input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit" class="btn light">Send message</button>
+          <p class="form-msg" role="status"></p>
+        </form>
       </div>
     </div>
   </div>
@@ -238,5 +254,6 @@
   </div>
 </footer>
 
+<script src="assets/contact.js" defer></script>
 </body>
 </html>

@@ -157,3 +157,21 @@ footer a{color:var(--ink2)}
 @media (max-width:760px){.tl{grid-template-columns:1fr}}
 img.globe{width:100%;max-width:480px;justify-self:center;border-radius:50%;box-shadow:0 24px 60px rgba(15,42,44,.22)}
 @media (max-width:920px){img.globe{max-width:360px}}
+
+/* contact form inside the gradient box */
+.ctabox .cgrid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
+.cform{display:grid;gap:12px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:22px}
+.cform .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cform label{display:grid;gap:5px;font:600 13px var(--disp);color:#DDF1F2}
+.cform input,.cform textarea{font:400 16px var(--body);color:var(--ink);background:#fff;border:0;border-radius:12px;padding:11px 13px;width:100%}
+.cform textarea{min-height:110px;resize:vertical}
+.cform input:focus,.cform textarea:focus{outline:3px solid var(--peach)}
+.cform button{justify-self:start;border:0;cursor:pointer}
+.cform button:disabled{opacity:.6;cursor:wait}
+.form-msg{font-size:15px;color:#fff;min-height:1.4em;margin:0}
+.mailrow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:24px}
+.mailrow code{font:600 16px var(--body);background:rgba(255,255,255,.14);padding:11px 16px;border-radius:999px;color:#fff}
+.mailrow button{border:0;cursor:pointer}
+.hp{position:absolute;left:-9999px}
+@media (max-width:920px){.ctabox .cgrid{grid-template-columns:1fr}.cform .row{grid-template-columns:1fr}}
+section[id]{scroll-margin-top:90px}
