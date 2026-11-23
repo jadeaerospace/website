@@ -4,250 +4,181 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Jade Aerospace | Satellites, ground stations and AI for Earth observation</title>
-<meta name="description" content="Jade Aerospace is a Hong Kong company building an Earth observation chain: a 216-satellite constellation, licensed ground stations in Brazil, a calibration field and AI analysis for farms, forests and mines.">
+<meta name="description" content="Jade Aerospace is a Hong Kong company building a full Earth observation chain: a 216-satellite constellation, licensed ground stations in Brazil, a calibration field and AI analysis.">
+<meta name="theme-color" content="#061418">
 <meta property="og:title" content="Jade Aerospace">
-<meta property="og:description" content="Satellites, ground stations and AI that turn Earth observation into answers people can use.">
-<meta property="og:image" content="https://jadeaerospace.com/assets/orbit-fields.jpg">
+<meta property="og:description" content="Satellites, ground stations and AI, from orbit to the field.">
+<meta property="og:image" content="https://jadeaerospace.com/assets/hero-fields.jpg">
+<link rel="alternate" hreflang="en" href="https://jadeaerospace.com/">
 <link rel="alternate" hreflang="zh-Hans" href="https://jadeaerospace.com/zh/">
 <link rel="icon" href="assets/logo-jade.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Manrope:wght@400;500;600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<script src="assets/site.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#orbit">Skip to content</a>
 
-<div class="nav wrap">
-  <div class="bar">
-    <a href="./"><img src="assets/logo-jade.png" alt="Jade Aerospace"></a>
+<!-- ============ TOP BAR ============ -->
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="./"><img src="assets/logo-white.png" alt="Jade Aerospace"></a>
     <nav>
-      <a href="#what">What we do</a>
-      <a href="#work">Our work</a>
-      <a href="#timeline">Timeline</a>
-      <a href="#team">Team</a>
+      <a href="#orbit">Constellation</a><a href="#ground">Ground stations</a><a href="#field">AgriEasy</a><a href="#proof">Work</a><a href="#team">Team</a>
       <a class="lang" href="zh/" hreflang="zh-Hans">中文</a>
-      <a class="cta" href="#contact">Get in touch</a>
+      <a class="cta-top" href="#contact">Contact</a>
     </nav>
   </div>
-</div>
+</header>
 
-<!-- HERO -->
+<!-- Stage rail: one link per section below. Keep ids in step. -->
+<nav class="rail" aria-label="Sections"><ol><li><a href="#orbit">Orbit</a></li><li><a href="#ground">Ground</a></li><li><a href="#calibration">Calibration</a></li><li><a href="#field">Field</a></li><li><a href="#proof">Proof</a></li><li><a href="#timeline">Timeline</a></li><li><a href="#team">Team</a></li><li><a href="#contact">Contact</a></li></ol></nav>
+
+<main class="main">
+
+<!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="wrap">
-    <div class="grid">
-      <div>
-        <span class="tag">Satellites · ground stations · AI · from Hong Kong</span>
-        <h1>Satellite data people can <em>actually use</em></h1>
-        <p>A farmer needs to know which field is dry. A bank needs to know the crop it lent against is growing. <b>We are building the whole chain that answers them</b>: our own constellation, licensed ground stations in Brazil, a calibration field, and AI that turns images into plain answers.</p>
-        <div class="btns">
-          <a class="btn" href="#contact">Talk to us</a>
-          <a class="btn ghost" href="#work">See our work</a>
-        </div>
-      </div>
-      <div class="heroimg"><img src="assets/orbit-fields.jpg" alt="Satellite image of irrigated fields and centre pivots"></div>
-    </div>
-    <div class="stats">
-      <div><b>216</b><span>satellites designed and filed with the ITU</span></div>
-      <div><b>6</b><span>licensed ground station sites in Brazil</span></div>
-      <div><b>10</b><span>pilot projects delivered</span></div>
-      <div><b>2028</b><span>first launch target</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- WHAT WE DO -->
-<section id="what">
-  <div class="wrap">
-    <h2>What we do</h2>
-    <p class="sub">Most satellite companies own one link. We are putting the whole chain in one place, from the satellite in orbit to the alert on a farmer's phone.</p>
-    <div class="cards c4">
-      <div class="card"><div class="ph"><img src="assets/constellation.jpg" alt="" loading="lazy"></div><div class="bd"><span class="n">01</span><h3>Constellation</h3><p>216 satellites in 24 orbital planes: optical at 0.5 m plus radar that sees through cloud.</p></div></div>
-      <div class="card"><div class="ph"><img src="assets/gs-tucano.jpg" alt="" loading="lazy"></div><div class="bd"><span class="n">02</span><h3>Ground stations</h3><p>Six licensed sites in Brazil on X and S band, for satellite control and data downlink.</p></div></div>
-      <div class="card"><div class="ph"><img src="assets/orbit-dunes.jpg" alt="" loading="lazy"></div><div class="bd"><span class="n">03</span><h3>Calibration field</h3><p>A clear-sky site in Brazil's semi-arid northeast for calibrating optical and radar sensors.</p></div></div>
-      <div class="card"><div class="ph"><img src="assets/farmland.jpg" alt="" loading="lazy"></div><div class="bd"><span class="n">04</span><h3>AI analysis</h3><p>AgriEasy and our analysis platform, built in Hong Kong, turn images into answers.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- CONSTELLATION -->
-<section>
-  <div class="wrap split">
-    <div>
-      <p class="kicker">Constellation</p>
-      <h2>Optical and radar, working together</h2>
-      <p class="sub">Each orbital plane carries 7 optical satellites and 2 SAR radar satellites. Optical shows field detail and crop health. Radar works at night and through cloud, so the rainy season stops being a blind spot.</p>
-      <ul class="ticks">
-        <li><b>Done:</b> constellation and orbit design</li>
-        <li><b>Done:</b> ITU satellite network filing through Brazil's ANATEL (network ALYASPC)</li>
-        <li><b>Done:</b> ANATEL frequency licence</li>
-        <li class="next"><b>Next:</b> satellite build and launch, first launch targeted for 2028</li>
-      </ul>
-    </div>
-    <div class="pic"><img src="assets/constellation.jpg" alt="Satellites in orbit around Earth" loading="lazy"></div>
-  </div>
-</section>
-
-<!-- GROUND STATIONS -->
-<section>
-  <div class="wrap split">
-    <div class="pic"><img src="assets/gs-tucano.jpg" alt="Design render of the Tucano ground station" loading="lazy"></div>
-    <div>
-      <p class="kicker">Ground stations and calibration</p>
-      <h2>A landing point in South America</h2>
-      <p class="sub">Six licensed ground station sites across Brazil. The first, in Tucano, Bahia, has its master plan and building design done, and the Bahia state government supports a control centre in the state technology park.</p>
-      <ul class="ticks">
-        <li><b>S band</b> for telemetry, tracking and command</li>
-        <li><b>X band</b> for image and payload downlink</li>
-        <li><b>Calibration field</b> at the Tucano site: few clouds all year, reflectance targets for optical sensors and corner reflectors for radar</li>
-      </ul>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="gallery g3">
-      <figure><img src="assets/gs-front.jpg" alt="Ground station building render" loading="lazy"><figcaption>Station building (design render)</figcaption></figure>
-      <figure><img src="assets/gs-control.jpg" alt="Control room render" loading="lazy"><figcaption>Control room (design render)</figcaption></figure>
-      <figure><img src="assets/orbit-salvador.jpg" alt="Satellite image of Salvador, Bahia" loading="lazy"><figcaption>Salvador, Bahia, from orbit</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- AGRIEASY -->
-<section>
-  <div class="wrap split">
-    <div>
-      <p class="kicker">AgriEasy · built in Hong Kong</p>
-      <h2>From satellite image to a message on the phone</h2>
-      <p class="sub">AgriEasy combines satellite images and weather data, runs them through AI, and sends small farmers crop alerts by WeChat in China, WhatsApp in Brazil, or SMS. Farmers use it for free. Banks, insurers and exporters pay per hectare.</p>
-    </div>
-    <img class="globe" src="assets/agrieasy-globe.jpg" alt="AgriEasy: from space to your farm. Satellites feed AI alerts on soil, water, climate, production and credit" loading="lazy">
-  </div>
-  <div class="wrap">
-    <div class="cards c3">
-      <div class="card"><div class="bd no-ph"><h3>Agriculture</h3><p>Emergence, field boundaries, crop health (NDVI), soil moisture, yield and harvest timing.</p></div></div>
-      <div class="card"><div class="bd no-ph"><h3>Forests and carbon</h3><p>Tree counts, forest cover and health, deforestation checks for the EU rules (EUDR), carbon monitoring.</p></div></div>
-      <div class="card"><div class="bd no-ph"><h3>Mining and geology</h3><p>Ongoing mine monitoring, ground subsidence, before-and-after views of geohazards.</p></div></div>
-      <div class="card"><div class="bd no-ph"><h3>Disasters</h3><p>Wildfire detection and source analysis, loss checks after an event for insurance.</p></div></div>
-      <div class="card"><div class="bd no-ph"><h3>Oceans</h3><p>Ship detection, coastline change, aquaculture rafts, red and green tide mapping.</p></div></div>
-      <div class="card"><div class="bd no-ph"><h3>Cities and assets</h3><p>Construction progress, oil storage estimates, airport activity, 3D city models.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- WORK: dark panel -->
-<section id="work">
-  <div class="wrap">
-    <div class="panel">
-      <p class="kicker">Our work so far</p>
-      <h2>10 pilot projects delivered</h2>
-      <p class="sub">Each one ran the full workflow: collect the data, analyse it, write the report, deliver it. We are now building that workflow into an automated platform. Client names stay private under NDA.</p>
-      <div class="cards c3">
-        <div class="card"><div class="ph"><img src="assets/farmland.jpg" alt="" loading="lazy"></div><div class="bd"><h3>Coffee plantation</h3><p>Compared images from four years ago with today to show no forest was cleared. The report meets the EU Deforestation Regulation and can go to lenders.</p></div></div>
-        <div class="card"><div class="ph"><img src="assets/orbit-dunes.jpg" alt="" loading="lazy"></div><div class="bd"><h3>Carbon credits</h3><p>Counted and tracked native trees replanted by a low-income farming community. The report became the verification document carbon credit buyers accept.</p></div></div>
-        <div class="card"><div class="ph"><img src="assets/mine.jpg" alt="" loading="lazy"></div><div class="bd"><h3>Mine monitoring</h3><p>Monthly monitoring of a large mining site in Brazil, with data from several satellite operators, delivered on schedule.</p></div></div>
-      </div>
-      <p class="kicker" style="margin-top:48px">Seen from orbit</p>
-      <div class="gallery g4" style="margin-top:8px">
-        <figure><img src="assets/orbit-pivots.jpg" alt="Centre-pivot irrigation from orbit" loading="lazy"><figcaption>Centre-pivot farms</figcaption></figure>
-        <figure><img src="assets/orbit-dam.jpg" alt="Dam and reservoir from orbit" loading="lazy"><figcaption>Dam and reservoir</figcaption></figure>
-        <figure><img src="assets/orbit-dunes.jpg" alt="Dunes, lagoon and city edge from orbit" loading="lazy"><figcaption>Dunes, lagoon and city edge</figcaption></figure>
-        <figure><img src="assets/orbit-salvador.jpg" alt="Coastal city from orbit" loading="lazy"><figcaption>Coastal city</figcaption></figure>
+  <div class="frame">
+    <div class="bg"><img src="assets/hero-fields.jpg" alt="" fetchpriority="high"></div>
+    <div class="scene-id"><span>Jade Aerospace · Earth observation</span><span>Optical scene · irrigated farmland</span></div>
+    <div class="copy">
+      <h1>From orbit<br>to the field.</h1>
+      <p class="lede">Jade Aerospace is building the whole Earth observation chain: a 216-satellite constellation, licensed ground stations in Brazil, a calibration field, and AI that turns images into answers for farms, forests and mines.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Contact us <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+        <a class="btn ghost" href="#orbit">See the chain <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v11M3 8l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
       </div>
     </div>
+    <div class="collar"><div class=""><b>216</b><span>satellites in the constellation design</span></div><div class=""><b>24</b><span>orbital planes</span></div><div class=""><b>6</b><span>licensed ground station sites in Brazil</span></div><div class="plan"><b>2028</b><span>first launch target</span></div></div>
   </div>
 </section>
 
-<!-- TIMELINE -->
-<section id="timeline">
+<!-- ============ ORBIT: constellation ============ -->
+<section class="sec orbit" id="orbit">
   <div class="wrap">
-    <h2>Timeline</h2>
-    <p class="sub">Seven years of groundwork in Brazil, Europe and Hong Kong, and what comes next.</p>
-    <div class="tl">
-      <div>
-        <p class="tl-head">Done</p>
-        <ol style="list-style:none;padding:0;margin:0">
-        <li><span class="yr">2019</span><b>Alya Space founded in Brazil</b><p>Wins the Brazilian Air Force Amazonia 4.0 challenge.</p></li>
-        <li><span class="yr">2020</span><b>Two years with the Brazilian Air Force</b><p>Residency at IEAv / DCTA to validate the work.</p></li>
-        <li><span class="yr">2022</span><b>Paper at IAC Paris</b><p>International Astronautical Congress.</p></li>
-        <li><span class="yr">2023–24</span><b>Constellation designed and filed</b><p>Jianguo Chai and Ruoyu Li join. Alya Nanosatellites opens in Paris. ITU filing through ANATEL. Speaker at G20 Space 2024.</p></li>
-        <li><span class="yr">2025</span><b>Jade Aerospace founded in Hong Kong</b><p>Selected for the Microsoft × HKSTP Co-Ideation programme.</p></li>
-        <li><span class="yr">2026</span><b>10 pilot projects delivered</b><p>Mining, coffee, carbon and land projects in Brazil and Africa. Exhibited in the space zone at InnoCarnival 2026, Hong Kong.</p></li>
-        </ol>
-      </div>
-      <div>
-        <p class="tl-head">Next</p>
-        <ol style="list-style:none;padding:0;margin:0">
-        <li class="plan"><span class="yr">2027</span><b>Partners for satellites, stations and calibration</b><p>Build the first satellites and the Tucano ground station with partners.</p></li>
-        <li class="plan"><span class="yr">2027</span><b>AgriEasy first version</b><p>Satellite data, AI analysis and WeChat, WhatsApp or SMS alerts, with the first trial users.</p></li>
-        <li class="plan"><span class="yr">2027</span><b>First paying customer</b><p>An insurer or bank, paying per hectare.</p></li>
-        <li class="plan"><span class="yr">2028</span><b>First satellite launch</b><p>Target for the first satellites of the constellation.</p></li>
-        </ol>
-      </div>
+    <div class="sec-head"><h2>A constellation of optical and radar satellites</h2><p>Optical satellites show field detail and crop health. Radar satellites image at night and through cloud, so the rainy season stops being a blind spot. The design and the paperwork are done; the build comes next.</p></div>
+    <div class="grid12">
+      <figure class="media" style="margin:0">
+        <div class="frame"><img src="assets/constellation.jpg" alt="" loading="lazy"></div>
+        <figcaption class="cap"><span>Illustration</span><b>Constellation concept</b></figcaption>
+      </figure>
+      <div class="side"><table class="spec"><tbody><tr><th scope="row">Constellation</th><td><span class="num">216</span> satellites in <span class="num">24</span> orbital planes</td></tr><tr><th scope="row">Each plane</th><td><span class="num">7</span> optical + <span class="num">2</span> SAR radar satellites</td></tr><tr><th scope="row">Optical</th><td><span class="num">0.5 m</span> panchromatic + near-infrared</td></tr><tr><th scope="row">Radar</th><td>Through cloud, day and night</td></tr><tr><th scope="row">Deployment</th><td>Two phases, Alya-1 and Alya-2, <span class="num">108</span> satellites each</td></tr><tr><th scope="row">ITU filing</th><td>Network ALYASPC, through Brazil’s ANATEL<span class="tag">Filed</span></td></tr><tr><th scope="row">Frequency licence</th><td>ANATEL<span class="tag">Granted</span></td></tr><tr><th scope="row">First launch</th><td><span class="num">2028</span><span class="tag plan">Target</span></td></tr></tbody></table></div>
     </div>
   </div>
 </section>
 
-<!-- TEAM -->
-<section id="team">
+<!-- ============ GROUND: stations ============ -->
+<section class="sec" id="ground">
+  <div class="wrap"><div class="scalebar" aria-hidden="true"><i></i><i></i><i></i><i></i></div></div>
+  <figure class="bleed" style="margin-top:0;margin-bottom:0">
+    <div class="frame"><img src="assets/gs-tucano.jpg" alt="Tucano ground station, Bahia" loading="lazy"></div>
+    <div class="over"><h2>A landing point in South America</h2><p>Six licensed ground station sites across Brazil. The first, in Tucano, Bahia, has its master plan and building design done, and the Bahia state government supports a control centre in the state technology park.</p></div>
+  </figure>
   <div class="wrap">
-    <h2>Team</h2>
-    <p class="sub">Space, ground stations and AI. Aila, Jianguo and Ruoyu have delivered every pilot together since 2023; Rhea is turning that workflow into the AI platform.</p>
-    <div class="cards c4">
-      <div class="card person"><img src="assets/team-aila.jpg" alt="Aila Raquel" loading="lazy"><h3>Aila Raquel</h3><p class="role">Founder &amp; CEO</p><p>Founder of Alya Space, Alya Nanosatellites and Jade Aerospace. Designed the constellation. Winner of the Brazilian Air Force Amazonia 4.0 challenge.</p></div>
-      <div class="card person"><img src="assets/team-chai.jpg" alt="Jianguo Chai" loading="lazy"><h3>Jianguo Chai</h3><p class="role">CTO, Satellite &amp; Ground Systems</p><p>Led ground station builds for more than 20 satellite projects, including Nigeria, Venezuela, Pakistan and Algeria.</p></div>
-      <div class="card person"><img src="assets/team-rhea.jpg" alt="Rhea Lau" loading="lazy"><h3>Rhea Lau</h3><p class="role">CTO, GeoAI</p><p>Geophysics and machine learning. ML research at SLB, then Arup and Fugro in Hong Kong. Leads the AI platform.</p></div>
-      <div class="card person"><img src="assets/team-li.jpg" alt="Ruoyu Li" loading="lazy"><h3>Ruoyu Li</h3><p class="role">COO, Remote Sensing &amp; Data Fusion</p><p>Remote sensing engineer. MSc in Applied GIS from the National University of Singapore. Multi-source satellite and drone data.</p></div>
-    </div>
-
-    <p class="kicker" style="margin-top:56px">Out in the field</p>
-    <div class="gallery" style="margin-top:8px">
-      <figure class="wide"><img src="assets/event-hk.jpg" alt="Space exhibit in Hong Kong" loading="lazy"></figure>
-    </div>
-    <div class="gallery g3" style="margin-top:14px">
-      <figure><img src="assets/event-1.jpg" alt="Team at a space industry event" loading="lazy"></figure>
-      <figure><img src="assets/event-2.jpg" alt="Team at the Alya Space stand" loading="lazy"></figure>
-      <figure><img src="assets/event-3.jpg" alt="Group photo with partners" loading="lazy"></figure>
-    </div>
-    <div class="pills">
-      <span>Microsoft × HKSTP Co-Ideation programme</span>
-      <span>Brazilian Air Force IEAv / DCTA</span>
-      <span>Amazonia 4.0 challenge winner</span>
-      <span>Bahia state government</span>
-      <span>IAC Paris 2022 speaker</span>
-      <span>G20 Space 2024 speaker</span>
-    </div>
+    <p class="cap"><span>Design render</span><b>Tucano ground station, Bahia</b></p>
+    <div class="bands"><div><b>S band</b><span>Telemetry, tracking and command</span></div><div><b>X band</b><span>Image and payload downlink</span></div><div><b>6 sites</b><span>Licensed across Brazil</span></div><div><b>Tucano, Bahia</b><span>Master plan and building design complete</span></div></div>
+    <div class="strip"><figure><div class="frame"><img src="assets/gs-front.jpg" alt="Station building" loading="lazy"></div><figcaption class="cap"><span>Design render</span><b>Station building</b></figcaption></figure><figure><div class="frame"><img src="assets/gs-control.jpg" alt="Control room" loading="lazy"></div><figcaption class="cap"><span>Design render</span><b>Control room</b></figcaption></figure><figure><div class="frame"><img src="assets/orbit-salvador.jpg" alt="Coastal city" loading="lazy"></div><figcaption class="cap"><span>From orbit</span><b>Coastal city</b></figcaption></figure></div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
+<!-- ============ CALIBRATION ============ -->
+<section class="sec" id="calibration">
   <div class="wrap">
-    <div class="ctabox">
-      <div class="cgrid">
-        <div>
-          <p class="kicker">Looking for partners</p>
-          <h2>Build the chain with us.</h2>
-          <p>We are talking to satellite makers and launch providers, ground station and calibration partners, satellite data suppliers, and banks, insurers and agribusiness who want answers from orbit.</p>
-          <div class="mailrow">
-            <code>aila@alyaspace.com</code>
-            <button type="button" class="btn light" data-copy>Copy email</button>
-          </div>
-          <div class="btns"><a class="btn line" href="zh/">中文版</a></div>
-        </div>
-        <form id="contact-form" class="cform">
-          <div class="row">
-            <label>Name<input name="name" required autocomplete="name"></label>
-            <label>Email<input name="email" type="email" required autocomplete="email"></label>
-          </div>
-          <label>Organisation<input name="org" autocomplete="organization"></label>
-          <label>Message<textarea name="message" required></textarea></label>
-          <input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <button type="submit" class="btn light">Send message</button>
-          <p class="form-msg" role="status"></p>
-        </form>
-      </div>
+    <div class="scalebar" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="calib">
+      <h2>A calibration field under clear skies</h2>
+      <div class="body"><p>The calibration field sits at the Tucano site in Brazil’s semi-arid northeast, where there are few clouds all year and many usable satellite passes.</p><p>Reflectance targets on the ground calibrate optical sensors; corner reflectors calibrate radar. The field serves our own satellites and can offer calibration to other operators.</p></div>
+      <figure class="calib-plate frame"><svg viewBox="0 0 1200 420" role="img" aria-label="Schematic · not to scale">
+<defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1E3A40" stroke-width="1"/></pattern></defs>
+<rect width="1200" height="420" fill="url(#g)"/>
+<path d="M60 196 L1140 36" stroke="#51BAC1" stroke-width="1.5" stroke-dasharray="6 8" fill="none"/>
+<text class="lbl" x="980" y="96" fill="#51BAC1" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="15" letter-spacing="1">Satellite pass</text>
+<g transform="translate(160 220)">
+<rect x="0" y="0" width="70" height="70" fill="#F2F5F4"/><rect x="80" y="0" width="70" height="70" fill="#B9CBC9"/><rect x="160" y="0" width="70" height="70" fill="#7F9A98"/><rect x="240" y="0" width="70" height="70" fill="#2C5158"/>
+<path d="M0 100 H310" stroke="#51BAC1" stroke-width="1"/><path d="M0 95 v10 M310 95 v10" stroke="#51BAC1" stroke-width="1"/>
+<text class="lbl" x="0" y="132" fill="#B9CBC9" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="16">Optical reflectance targets</text></g>
+<g transform="translate(700 230)" fill="none" stroke="#F2F5F4" stroke-width="1.5">
+<path d="M0 60 L30 0 L60 60 Z"/><path d="M110 60 L140 0 L170 60 Z"/><path d="M220 60 L250 0 L280 60 Z"/>
+<path d="M30 0 V60 M140 0 V60 M250 0 V60" stroke="#51BAC1" stroke-width="1"/>
+<path d="M0 90 H280" stroke="#51BAC1" stroke-width="1"/><path d="M0 85 v10 M280 85 v10" stroke="#51BAC1" stroke-width="1"/>
+<text class="lbl" x="0" y="122" fill="#B9CBC9" stroke="none" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="16">SAR corner reflectors</text></g>
+<text class="lbl" x="28" y="44" fill="#7F9A98" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="13" letter-spacing="1.5">SCHEMATIC · NOT TO SCALE</text>
+</svg><figcaption class="calib-legend"><span><i class="sw t"></i>Optical reflectance targets</span><span><i class="sw r"></i>SAR corner reflectors</span><span><i class="sw p"></i>Satellite pass</span><span>Schematic · not to scale</span></figcaption></figure>
     </div>
   </div>
 </section>
+
+<!-- ============ FIELD: AgriEasy ============ -->
+<section class="sec field" id="field">
+  <div class="wrap"><div class="scalebar" aria-hidden="true"><i></i><i></i><i></i><i></i></div></div>
+  <div class="wrap grid12">
+    <div class="globe"><img src="assets/agrieasy-globe.jpg" alt="AgriEasy: from space to your farm. Satellite data feeds AI alerts on soil, water, climate, production and credit." loading="lazy"></div>
+    <div class="side">
+      <h2>From image to answer</h2>
+      <p style="color:var(--ink-2);margin-top:22px">AgriEasy, built in Hong Kong, combines satellite images and weather data, runs them through AI, and sends small farmers crop alerts. Farmers use it free. Banks, insurers and exporters pay per hectare.</p>
+      <div class="channels"><span><b>WeChat</b> · China</span><span><b>WhatsApp</b> · Brazil</span><span><b>SMS</b> · anywhere</span></div>
+      <ul class="index"><li><b>Agriculture</b><span>Emergence, field boundaries, crop health (NDVI), soil moisture, yield and harvest timing</span></li><li><b>Forests and carbon</b><span>Tree counts, forest cover and health, EUDR deforestation checks, carbon monitoring</span></li><li><b>Mining and geology</b><span>Ongoing mine monitoring, ground subsidence, geohazards before and after</span></li><li><b>Disasters</b><span>Wildfire detection and source analysis, loss checks for insurance</span></li><li><b>Oceans</b><span>Ship detection, coastline change, aquaculture rafts, red and green tides</span></li><li><b>Cities and assets</b><span>Construction progress, oil storage estimates, airport activity, 3D city models</span></li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROOF: pilots ============ -->
+<section class="sec" id="proof">
+  <div class="wrap">
+    <div class="sec-head"><h2>10 pilot projects delivered</h2><p>Each pilot ran the full workflow: collect the data, analyse it, write the report, deliver it, all on Chinese satellite data. We are now building that workflow into an automated platform.</p></div>
+    <div class="pilots"><article class="pilot"><div class="frame"><img src="assets/farmland.jpg" alt="" loading="lazy"></div><div class="txt"><h3>Coffee plantation</h3><p>Compared images from four years ago with today to show no forest was cleared. The report meets the EU Deforestation Regulation and can go to lenders.</p><table class="spec"><tbody><tr><th scope="row">Sector</th><td>Export compliance</td></tr><tr><th scope="row">Data</th><td>Optical, four years apart</td></tr><tr><th scope="row">Deliverable</th><td>EUDR deforestation report</td></tr></tbody></table></div></article><article class="pilot"><div class="frame"><img src="assets/orbit-dunes.jpg" alt="" loading="lazy"></div><div class="txt"><h3>Carbon credits</h3><p>Counted and tracked native trees replanted by a low-income farming community. The report became the verification document carbon credit buyers accept.</p><table class="spec"><tbody><tr><th scope="row">Sector</th><td>Carbon markets</td></tr><tr><th scope="row">Data</th><td>Optical, tree-by-tree counts</td></tr><tr><th scope="row">Deliverable</th><td>Verification report for credit buyers</td></tr></tbody></table></div></article><article class="pilot"><div class="frame"><img src="assets/mine.jpg" alt="" loading="lazy"></div><div class="txt"><h3>Mine monitoring</h3><p>Monthly monitoring of a large mining site in Brazil, with data from several satellite operators, delivered on schedule.</p><table class="spec"><tbody><tr><th scope="row">Sector</th><td>Mining, Brazil</td></tr><tr><th scope="row">Data</th><td>Optical from several operators</td></tr><tr><th scope="row">Deliverable</th><td>Monthly monitoring reports</td></tr></tbody></table></div></article></div>
+    <p class="note">Client names stay private under NDA. Images are representative.</p>
+    <div class="contact-sheet"><figure class="frame"><img src="assets/orbit-pivots.jpg" alt="Centre pivots" loading="lazy"><figcaption><span>Scene A</span><span>Centre pivots</span></figcaption></figure><figure class="frame"><img src="assets/orbit-dam.jpg" alt="Dam and reservoir" loading="lazy"><figcaption><span>Scene B</span><span>Dam and reservoir</span></figcaption></figure><figure class="frame"><img src="assets/orbit-dunes.jpg" alt="Dunes and lagoon" loading="lazy"><figcaption><span>Scene C</span><span>Dunes and lagoon</span></figcaption></figure><figure class="frame"><img src="assets/orbit-fields.jpg" alt="Field mosaic" loading="lazy"><figcaption><span>Scene D</span><span>Field mosaic</span></figcaption></figure></div>
+  </div>
+</section>
+
+<!-- ============ TIMELINE ============ -->
+<section class="sec" id="timeline">
+  <div class="wrap">
+    <div class="sec-head"><h2>Seven years of groundwork</h2></div>
+    <ol class="ledger"><li class=""><span class="yr">2019</span><b>Alya Space founded in Brazil</b><span>Wins the Brazilian Air Force Amazonia 4.0 challenge</span><span class="st">Done</span></li><li class=""><span class="yr">2020</span><b>Two years with the Brazilian Air Force</b><span>Residency at IEAv / DCTA to validate the work</span><span class="st">Done</span></li><li class=""><span class="yr">2022</span><b>Paper at IAC Paris</b><span>International Astronautical Congress</span><span class="st">Done</span></li><li class=""><span class="yr">2023–24</span><b>Constellation designed and filed</b><span>Jianguo Chai and Ruoyu Li join; Alya Nanosatellites opens in Paris; ITU filing through ANATEL; G20 Space speaker</span><span class="st">Done</span></li><li class=""><span class="yr">2025</span><b>Jade Aerospace founded in Hong Kong</b><span>Selected for the Microsoft × HKSTP Co-Ideation programme</span><span class="st">Done</span></li><li class="now"><span class="yr">2026</span><b>10 pilot projects delivered</b><span>Mining, coffee, carbon and land projects in Brazil and Africa; InnoCarnival 2026 space zone, Hong Kong</span><span class="st">Done</span></li><li class="plan"><span class="yr">2027</span><b>Partners for satellites, stations and calibration</b><span>Build the first satellites and the Tucano ground station with partners</span><span class="st">Planned</span></li><li class="plan"><span class="yr">2027</span><b>AgriEasy first version</b><span>Satellite data, AI analysis and alerts, with the first trial users</span><span class="st">Planned</span></li><li class="plan"><span class="yr">2027</span><b>First paying customer</b><span>An insurer or bank, paying per hectare</span><span class="st">Planned</span></li><li class="plan"><span class="yr">2028</span><b>First satellite launch</b><span>Target for the first satellites of the constellation</span><span class="st">Target</span></li></ol>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section class="sec" id="team">
+  <div class="wrap">
+    <div class="sec-head"><h2>The team</h2><p>Aila, Jianguo and Ruoyu have delivered every pilot together since 2023. Rhea is turning that workflow into the AI platform.</p></div>
+    <div class="team"><article class="person"><img src="assets/team-aila.jpg" alt="Aila Raquel" loading="lazy"><h3>Aila Raquel</h3><p class="role">Founder & CEO</p><p>Founder of Alya Space, Alya Nanosatellites and Jade Aerospace. Designed the constellation. Winner of the Brazilian Air Force Amazonia 4.0 challenge.</p></article><article class="person"><img src="assets/team-chai.jpg" alt="Jianguo Chai" loading="lazy"><h3>Jianguo Chai</h3><p class="role">CTO, Satellite & Ground Systems</p><p>Led ground station builds for more than 20 satellite projects, including Nigeria, Venezuela, Pakistan and Algeria.</p></article><article class="person"><img src="assets/team-rhea.jpg" alt="Rhea Lau" loading="lazy"><h3>Rhea Lau</h3><p class="role">CTO, GeoAI</p><p>Geophysics and machine learning. ML research at SLB, then Arup and Fugro in Hong Kong. Leads the AI platform.</p></article><article class="person"><img src="assets/team-li.jpg" alt="Ruoyu Li" loading="lazy"><h3>Ruoyu Li</h3><p class="role">COO, Remote Sensing & Data Fusion</p><p>Remote sensing engineer. MSc in Applied GIS from the National University of Singapore. Multi-source satellite and drone data.</p></article></div>
+    <figure class="wide-photo" style="margin:0">
+      <div class="frame"><img src="assets/event-hk.jpg" alt="Jade at the HKSTP space exhibit, InnoCarnival 2026, Hong Kong" loading="lazy"></div>
+      <figcaption class="cap"><span>Hong Kong</span><b>InnoCarnival 2026 space zone</b></figcaption>
+    </figure>
+    <div class="crew"><figure><div class="frame"><img src="assets/event-1.jpg" alt="Team at a space industry event" loading="lazy"></div></figure><figure><div class="frame"><img src="assets/event-2.jpg" alt="Team at the Alya Space stand" loading="lazy"></div></figure><figure><div class="frame"><img src="assets/event-3.jpg" alt="Group photo with partners" loading="lazy"></div></figure></div>
+    <div class="marks"><span>Microsoft × HKSTP Co-Ideation</span><span>Brazilian Air Force IEAv / DCTA</span><span>Amazonia 4.0 challenge winner</span><span>Bahia state government</span><span>IAC Paris 2022</span><span>G20 Space 2024</span></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap grid12">
+    <div class="left">
+      <h2>Build the chain with us</h2>
+      <p>We are talking to satellite makers and launch providers, ground station and calibration partners, satellite data suppliers, and banks, insurers and agribusiness who want answers from orbit.</p>
+      <div class="mailrow"><code>aila@alyaspace.com</code><button type="button" data-copy>Copy email</button></div>
+    </div>
+    <form id="contact-form" class="cform">
+      <div class="row">
+        <label>Name<input name="name" required autocomplete="name"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      </div>
+      <label>Organisation<input name="org" autocomplete="organization"></label>
+      <label>Message<textarea name="message" required></textarea></label>
+      <input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" class="btn">Send message <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
+      <p class="form-msg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
 
 <footer>
   <div class="wrap">

@@ -11,7 +11,7 @@
     e.preventDefault();
     var msg = form.querySelector('.form-msg'), btn = form.querySelector('button[type=submit]');
     if (form.elements._honey.value) return;
-    btn.disabled = true; msg.textContent = T.sending;
+    btn.disabled = true; msg.textContent = T.sending; msg.classList.remove('err');
     fetch('https://formsubmit.co/ajax/' + EMAIL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
@@ -27,7 +27,7 @@
       if (String(d.success) !== 'true') throw new Error(d.message || 'failed');
       form.reset(); msg.textContent = T.ok;
     }).catch(function () {
-      msg.textContent = T.err + EMAIL;
+      msg.textContent = T.err + EMAIL; msg.classList.add('err');
     }).finally(function () { btn.disabled = false; });
   });
 

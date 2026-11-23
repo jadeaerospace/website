@@ -4,251 +4,181 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>玉航天 Jade Aerospace | 卫星星座、地面站与 AI 遥感分析</title>
-<meta name="description" content="玉航天是一家香港公司，建设完整的对地观测链条：216 颗卫星星座、巴西已获许可的地面站、定标场，以及服务农业、林业和矿业的 AI 遥感分析。">
-<meta property="og:title" content="玉航天 Jade Aerospace">
-<meta property="og:description" content="卫星、地面站与 AI：把对地观测变成能直接用的结论。">
-<meta property="og:image" content="https://jadeaerospace.com/assets/orbit-fields.jpg">
+<meta name="description" content="玉航天是一家香港公司，建设完整的对地观测链条：216 颗卫星星座、巴西已获许可的地面站、定标场，以及 AI 遥感分析。">
+<meta name="theme-color" content="#061418">
+<meta property="og:title" content="Jade Aerospace">
+<meta property="og:description" content="卫星、地面站与 AI：从轨道到田间。">
+<meta property="og:image" content="https://jadeaerospace.com/assets/hero-fields.jpg">
 <link rel="alternate" hreflang="en" href="https://jadeaerospace.com/">
+<link rel="alternate" hreflang="zh-Hans" href="https://jadeaerospace.com/zh/">
 <link rel="icon" href="../assets/logo-jade.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Noto+Sans+SC:wght@400;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Manrope:wght@400;500;600&family=Noto+Sans+SC:wght@400;500&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
-<style>h1,h2,h3{letter-spacing:0}.tag,.kicker{letter-spacing:.06em}</style>
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#orbit">跳到正文</a>
 
-<div class="nav wrap">
-  <div class="bar">
-    <a href="./"><img src="../assets/logo-jade.png" alt="玉航天 Jade Aerospace"></a>
+<!-- ============ TOP BAR ============ -->
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="./"><img src="../assets/logo-white.png" alt="Jade Aerospace"></a>
     <nav>
-      <a href="#what">业务</a>
-      <a href="#work">项目</a>
-      <a href="#timeline">历程</a>
-      <a href="#team">团队</a>
+      <a href="#orbit">卫星星座</a><a href="#ground">地面站</a><a href="#field">农易</a><a href="#proof">项目</a><a href="#team">团队</a>
       <a class="lang" href="../" hreflang="en">EN</a>
-      <a class="cta" href="#contact">联系我们</a>
+      <a class="cta-top" href="#contact">联系我们</a>
     </nav>
   </div>
-</div>
+</header>
 
-<!-- 首屏 -->
+<!-- Stage rail: one link per section below. Keep ids in step. -->
+<nav class="rail" aria-label="页面导航"><ol><li><a href="#orbit">轨道</a></li><li><a href="#ground">地面站</a></li><li><a href="#calibration">定标场</a></li><li><a href="#field">田间</a></li><li><a href="#proof">项目</a></li><li><a href="#timeline">历程</a></li><li><a href="#team">团队</a></li><li><a href="#contact">联系</a></li></ol></nav>
+
+<main class="main">
+
+<!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="wrap">
-    <div class="grid">
-      <div>
-        <span class="tag">卫星 · 地面站 · AI · 香港</span>
-        <h1>让卫星数据<br><em>真正用得上</em></h1>
-        <p>农户要知道哪块地缺水，银行要知道贷款对应的作物长得好不好。<b>我们正在建设回答这些问题的完整链条</b>：自有卫星星座、巴西已获许可的地面站、定标场，以及把影像变成直接结论的 AI。</p>
-        <div class="btns">
-          <a class="btn" href="#contact">联系我们</a>
-          <a class="btn ghost" href="#work">看看我们的项目</a>
-        </div>
-      </div>
-      <div class="heroimg"><img src="../assets/orbit-fields.jpg" alt="灌溉农田与中心支轴喷灌的卫星影像"></div>
-    </div>
-    <div class="stats">
-      <div><b>216</b><span>颗卫星，已完成设计并向 ITU 申报</span></div>
-      <div><b>6</b><span>个巴西已获许可的地面站站址</span></div>
-      <div><b>10</b><span>个已交付的试点项目</span></div>
-      <div><b>2028</b><span>首次发射目标</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- 业务 -->
-<section id="what">
-  <div class="wrap">
-    <h2>我们做什么</h2>
-    <p class="sub">多数卫星公司只做其中一环。我们把整条链放在一起：从轨道上的卫星，到农户手机上的提示。</p>
-    <div class="cards c4">
-      <div class="card"><div class="ph"><img src="../assets/constellation.jpg" alt="" loading="lazy"></div><div class="bd"><span class="n">01</span><h3>卫星星座</h3><p>216 颗卫星，24 个轨道面：0.5 米光学卫星，加上能穿透云层的 SAR 雷达卫星。</p></div></div>
-      <div class="card"><div class="ph"><img src="../assets/gs-tucano.jpg" alt="" loading="lazy"></div><div class="bd"><span class="n">02</span><h3>地面站</h3><p>巴西 6 个已获许可的站址，X 与 S 频段，负责卫星测控和数据下传。</p></div></div>
-      <div class="card"><div class="ph"><img src="../assets/orbit-dunes.jpg" alt="" loading="lazy"></div><div class="bd"><span class="n">03</span><h3>定标场</h3><p>位于巴西东北部半干旱区，晴空多、云量少，为光学和雷达传感器定标。</p></div></div>
-      <div class="card"><div class="ph"><img src="../assets/farmland.jpg" alt="" loading="lazy"></div><div class="bd"><span class="n">04</span><h3>AI 影像分析</h3><p>AgriEasy 农易和分析平台在香港研发，把影像变成能直接用的结论。</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 星座 -->
-<section>
-  <div class="wrap split">
-    <div>
-      <p class="kicker">卫星星座</p>
-      <h2>光学与雷达互补</h2>
-      <p class="sub">每个轨道面 7 颗光学卫星、2 颗 SAR 雷达卫星。光学看清地块细节和作物长势；雷达昼夜成像、穿透云层，雨季也不再是盲区。</p>
-      <ul class="ticks">
-        <li><b>已完成：</b>星座与轨道设计</li>
-        <li><b>已完成：</b>经巴西主管部门 ANATEL 向 ITU 提交卫星网络申报（网络代号 ALYASPC）</li>
-        <li><b>已完成：</b>ANATEL 频率许可</li>
-        <li class="next"><b>下一步：</b>卫星研制与发射，首次发射目标 2028 年</li>
-      </ul>
-    </div>
-    <div class="pic"><img src="../assets/constellation.jpg" alt="环绕地球的卫星" loading="lazy"></div>
-  </div>
-</section>
-
-<!-- 地面站 -->
-<section>
-  <div class="wrap split">
-    <div class="pic"><img src="../assets/gs-tucano.jpg" alt="图卡诺地面站设计效果图" loading="lazy"></div>
-    <div>
-      <p class="kicker">地面站与定标场</p>
-      <h2>南美的数据落脚点</h2>
-      <p class="sub">巴西 6 个已获许可的地面站站址。首站位于巴伊亚州图卡诺，已完成总体规划和建筑方案；巴伊亚州政府支持在州科技园设立控制中心。</p>
-      <ul class="ticks">
-        <li><b>S 频段：</b>测控（TT&amp;C），卫星平台与星座管理</li>
-        <li><b>X 频段：</b>影像与载荷数据下传</li>
-        <li><b>定标场：</b>位于图卡诺站址，全年云量少；光学用地面反射靶标，SAR 用角反射器</li>
-      </ul>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="gallery g3">
-      <figure><img src="../assets/gs-front.jpg" alt="地面站建筑效果图" loading="lazy"><figcaption>站房（设计效果图）</figcaption></figure>
-      <figure><img src="../assets/gs-control.jpg" alt="控制室效果图" loading="lazy"><figcaption>控制室（设计效果图）</figcaption></figure>
-      <figure><img src="../assets/orbit-salvador.jpg" alt="巴伊亚州萨尔瓦多卫星影像" loading="lazy"><figcaption>巴伊亚州萨尔瓦多，卫星视角</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- 农易 -->
-<section>
-  <div class="wrap split">
-    <div>
-      <p class="kicker">AgriEasy 农易 · 香港研发</p>
-      <h2>从卫星影像，到手机上的一条提示</h2>
-      <p class="sub">AgriEasy 把卫星影像和气象数据交给 AI 分析，再用微信（中国）、WhatsApp（巴西）或短信给中小农户推送作物提示。农户免费使用，银行、保险公司和出口商按面积付费。</p>
-    </div>
-    <img class="globe" src="../assets/agrieasy-globe.jpg" alt="AgriEasy 农易：从太空到你的农场，卫星数据经 AI 分析，提示土壤、水、气候、生产与信贷" loading="lazy">
-  </div>
-  <div class="wrap">
-    <div class="cards c3">
-      <div class="card"><div class="bd no-ph"><h3>农业</h3><p>出苗率、种植边界、长势（NDVI 等）、土壤湿度、产量与成熟期。</p></div></div>
-      <div class="card"><div class="bd no-ph"><h3>林业与碳汇</h3><p>树木计数、森林覆盖与健康、欧盟毁林法规（EUDR）核查、碳汇监测。</p></div></div>
-      <div class="card"><div class="bd no-ph"><h3>矿业与地质</h3><p>矿区持续监测、地面沉降、地质灾害前后对比。</p></div></div>
-      <div class="card"><div class="bd no-ph"><h3>灾害</h3><p>山火识别与火源分析、灾后损失核查（保险）。</p></div></div>
-      <div class="card"><div class="bd no-ph"><h3>海洋</h3><p>船只目标检测、海岸线变化、养殖浮筏提取、赤潮绿潮识别。</p></div></div>
-      <div class="card"><div class="bd no-ph"><h3>城市与资产</h3><p>施工进度、原油储量估算、机场动态、城市三维重建。</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 项目 -->
-<section id="work">
-  <div class="wrap">
-    <div class="panel">
-      <p class="kicker">已完成的项目</p>
-      <h2>10 个试点项目已交付</h2>
-      <p class="sub">每个项目都走完了完整流程：采集数据、分析、编写报告、交付。现在我们正把这套流程开发成自动化平台。客户名称受保密协议约束，不予公开。</p>
-      <div class="cards c3">
-        <div class="card"><div class="ph"><img src="../assets/farmland.jpg" alt="" loading="lazy"></div><div class="bd"><h3>咖啡种植园</h3><p>对比 4 年前与当前影像，证明没有毁林。报告符合欧盟毁林法规（EUDR），也可提交给贷款方。</p></div></div>
-        <div class="card"><div class="ph"><img src="../assets/orbit-dunes.jpg" alt="" loading="lazy"></div><div class="bd"><h3>碳信用</h3><p>对低收入农业社区补种的原生树进行卫星计数与监测，报告成为碳信用买家认可的核查文件。</p></div></div>
-        <div class="card"><div class="ph"><img src="../assets/mine.jpg" alt="" loading="lazy"></div><div class="bd"><h3>矿区监测</h3><p>为巴西一个大型矿区按月持续监测，协调多家卫星运营商的数据，按时交付。</p></div></div>
-      </div>
-      <p class="kicker" style="margin-top:48px">卫星视角</p>
-      <div class="gallery g4" style="margin-top:8px">
-        <figure><img src="../assets/orbit-pivots.jpg" alt="中心支轴喷灌农田卫星影像" loading="lazy"><figcaption>中心支轴喷灌农田</figcaption></figure>
-        <figure><img src="../assets/orbit-dam.jpg" alt="水坝与水库卫星影像" loading="lazy"><figcaption>水坝与水库</figcaption></figure>
-        <figure><img src="../assets/orbit-dunes.jpg" alt="沙丘、潟湖与城市边缘卫星影像" loading="lazy"><figcaption>沙丘、潟湖与城市边缘</figcaption></figure>
-        <figure><img src="../assets/orbit-salvador.jpg" alt="沿海城市卫星影像" loading="lazy"><figcaption>沿海城市</figcaption></figure>
+  <div class="frame">
+    <div class="bg"><img src="../assets/hero-fields.jpg" alt="" fetchpriority="high"></div>
+    <div class="scene-id"><span>玉航天 · 对地观测</span><span>光学影像 · 灌溉农田</span></div>
+    <div class="copy">
+      <h1>从轨道<br>到田间。</h1>
+      <p class="lede">玉航天正在建设完整的对地观测链条：216 颗卫星星座、巴西已获许可的地面站、定标场，以及把影像变成结论的 AI，服务农业、林业和矿业。</p>
+      <div class="actions">
+        <a class="btn" href="#contact">联系我们 <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+        <a class="btn ghost" href="#orbit">了解整条链 <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v11M3 8l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
       </div>
     </div>
+    <div class="collar"><div class=""><b>216</b><span>颗卫星，星座设计</span></div><div class=""><b>24</b><span>个轨道面</span></div><div class=""><b>6</b><span>个巴西已获许可的地面站站址</span></div><div class="plan"><b>2028</b><span>首次发射目标</span></div></div>
   </div>
 </section>
 
-<!-- 时间线 -->
-<section id="timeline">
+<!-- ============ ORBIT: constellation ============ -->
+<section class="sec orbit" id="orbit">
   <div class="wrap">
-    <h2>发展历程</h2>
-    <p class="sub">在巴西、欧洲和香港七年的前期积累，以及接下来的计划。</p>
-    <div class="tl">
-      <div>
-        <p class="tl-head">已完成</p>
-        <ol style="list-style:none;padding:0;margin:0">
-        <li><span class="yr">2019</span><b>Alya Space 在巴西成立</b><p>获巴西空军 Amazonia 4.0 挑战赛冠军。</p></li>
-        <li><span class="yr">2020</span><b>与巴西空军合作两年</b><p>在 IEAv / DCTA 驻所验证。</p></li>
-        <li><span class="yr">2022</span><b>巴黎国际宇航大会发表论文</b><p>International Astronautical Congress (IAC)。</p></li>
-        <li><span class="yr">2023–24</span><b>星座完成设计并申报</b><p>Jianguo Chai、Ruoyu Li 加入；Alya Nanosatellites 在巴黎成立；经 ANATEL 向 ITU 申报；2024 G20 航天会议演讲。</p></li>
-        <li><span class="yr">2025</span><b>玉航天在香港成立</b><p>入选 Microsoft × HKSTP 共创计划。</p></li>
-        <li><span class="yr">2026</span><b>10 个试点项目交付</b><p>巴西和非洲的矿业、咖啡、碳汇与土地项目；参展 InnoCarnival 2026 香港太空展区。</p></li>
-        </ol>
-      </div>
-      <div>
-        <p class="tl-head">计划中</p>
-        <ol style="list-style:none;padding:0;margin:0">
-        <li class="plan"><span class="yr">2027</span><b>卫星、地面站与定标场合作伙伴</b><p>与合作伙伴一起推进首批卫星和图卡诺地面站建设。</p></li>
-        <li class="plan"><span class="yr">2027</span><b>AgriEasy 农易最小可用版本</b><p>卫星数据、AI 分析，加上微信、WhatsApp 或短信提示，首批试用用户。</p></li>
-        <li class="plan"><span class="yr">2027</span><b>首个付费客户</b><p>保险公司或银行，按面积付费。</p></li>
-        <li class="plan"><span class="yr">2028</span><b>首次卫星发射</b><p>星座首批卫星的发射目标。</p></li>
-        </ol>
-      </div>
+    <div class="sec-head"><h2>光学与雷达卫星组成的星座</h2><p>光学卫星看清地块细节和作物长势；雷达卫星昼夜成像、穿透云层，雨季也不再是盲区。设计和申报已经完成，下一步是研制。</p></div>
+    <div class="grid12">
+      <figure class="media" style="margin:0">
+        <div class="frame"><img src="../assets/constellation.jpg" alt="" loading="lazy"></div>
+        <figcaption class="cap"><span>示意图</span><b>星座概念</b></figcaption>
+      </figure>
+      <div class="side"><table class="spec"><tbody><tr><th scope="row">星座</th><td><span class="num">216</span> 颗卫星，<span class="num">24</span> 个轨道面</td></tr><tr><th scope="row">每个轨道面</th><td><span class="num">7</span> 颗光学 + <span class="num">2</span> 颗 SAR 雷达卫星</td></tr><tr><th scope="row">光学</th><td><span class="num">0.5 米</span>全色 + 近红外</td></tr><tr><th scope="row">雷达</th><td>穿透云层，昼夜成像</td></tr><tr><th scope="row">部署</th><td>分两期：Alya-1 与 Alya-2，各 <span class="num">108</span> 颗</td></tr><tr><th scope="row">ITU 申报</th><td>网络代号 ALYASPC，经巴西 ANATEL 提交<span class="tag">已提交</span></td></tr><tr><th scope="row">频率许可</th><td>ANATEL<span class="tag">已获批</span></td></tr><tr><th scope="row">首次发射</th><td><span class="num">2028</span> 年<span class="tag plan">目标</span></td></tr></tbody></table></div>
     </div>
   </div>
 </section>
 
-<!-- 团队 -->
-<section id="team">
+<!-- ============ GROUND: stations ============ -->
+<section class="sec" id="ground">
+  <div class="wrap"><div class="scalebar" aria-hidden="true"><i></i><i></i><i></i><i></i></div></div>
+  <figure class="bleed" style="margin-top:0;margin-bottom:0">
+    <div class="frame"><img src="../assets/gs-tucano.jpg" alt="图卡诺地面站，巴伊亚州" loading="lazy"></div>
+    <div class="over"><h2>南美的数据落脚点</h2><p>巴西 6 个已获许可的地面站站址。首站位于巴伊亚州图卡诺，已完成总体规划和建筑方案；巴伊亚州政府支持在州科技园设立控制中心。</p></div>
+  </figure>
   <div class="wrap">
-    <h2>团队</h2>
-    <p class="sub">航天、地面站与 AI。Aila、Jianguo Chai 和 Ruoyu Li 自 2023 年起一起交付了全部试点项目；Rhea 负责把这套流程做成 AI 平台。</p>
-    <div class="cards c4">
-      <div class="card person"><img src="../assets/team-aila.jpg" alt="Aila Raquel" loading="lazy"><h3>Aila Raquel</h3><p class="role">创始人兼 CEO</p><p>Alya Space、Alya Nanosatellites 与玉航天创始人，负责星座设计；巴西空军 Amazonia 4.0 挑战赛冠军。</p></div>
-      <div class="card person"><img src="../assets/team-chai.jpg" alt="Jianguo Chai" loading="lazy"><h3>Jianguo Chai</h3><p class="role">CTO · 卫星与地面系统</p><p>主持尼日利亚、委内瑞拉、巴基斯坦、阿尔及利亚等 20 多个卫星项目的地面站建设。</p></div>
-      <div class="card person"><img src="../assets/team-rhea.jpg" alt="Rhea Lau" loading="lazy"><h3>Rhea Lau</h3><p class="role">CTO · GeoAI</p><p>地球物理与机器学习背景；斯伦贝谢（SLB）机器学习研究，奥雅纳（Arup）、辉固（Fugro）香港。负责 AI 平台研发。</p></div>
-      <div class="card person"><img src="../assets/team-li.jpg" alt="Ruoyu Li" loading="lazy"><h3>Ruoyu Li</h3><p class="role">COO · 遥感与数据融合</p><p>遥感工程师，新加坡国立大学应用地理信息系统硕士；多源卫星与无人机数据处理。</p></div>
-    </div>
-
-    <p class="kicker" style="margin-top:56px">活动现场</p>
-    <div class="gallery" style="margin-top:8px">
-      <figure class="wide"><img src="../assets/event-hk.jpg" alt="香港太空展区" loading="lazy"></figure>
-    </div>
-    <div class="gallery g3" style="margin-top:14px">
-      <figure><img src="../assets/event-1.jpg" alt="团队参加航天行业活动" loading="lazy"></figure>
-      <figure><img src="../assets/event-2.jpg" alt="团队在 Alya Space 展位" loading="lazy"></figure>
-      <figure><img src="../assets/event-3.jpg" alt="与合作伙伴合影" loading="lazy"></figure>
-    </div>
-    <div class="pills">
-      <span>Microsoft × HKSTP 共创计划</span>
-      <span>巴西空军 IEAv / DCTA</span>
-      <span>Amazonia 4.0 挑战赛冠军</span>
-      <span>巴伊亚州政府</span>
-      <span>2022 巴黎国际宇航大会演讲</span>
-      <span>2024 G20 航天会议演讲</span>
-    </div>
+    <p class="cap"><span>设计效果图</span><b>图卡诺地面站，巴伊亚州</b></p>
+    <div class="bands"><div><b>S 频段</b><span>测控（TT&amp;C）</span></div><div><b>X 频段</b><span>影像与载荷数据下传</span></div><div><b>6 个站址</b><span>巴西境内已获许可</span></div><div><b>图卡诺</b><span>总体规划与建筑方案已完成</span></div></div>
+    <div class="strip"><figure><div class="frame"><img src="../assets/gs-front.jpg" alt="站房" loading="lazy"></div><figcaption class="cap"><span>设计效果图</span><b>站房</b></figcaption></figure><figure><div class="frame"><img src="../assets/gs-control.jpg" alt="控制室" loading="lazy"></div><figcaption class="cap"><span>设计效果图</span><b>控制室</b></figcaption></figure><figure><div class="frame"><img src="../assets/orbit-salvador.jpg" alt="沿海城市" loading="lazy"></div><figcaption class="cap"><span>卫星视角</span><b>沿海城市</b></figcaption></figure></div>
   </div>
 </section>
 
-<!-- 联系 -->
-<section id="contact">
+<!-- ============ CALIBRATION ============ -->
+<section class="sec" id="calibration">
   <div class="wrap">
-    <div class="ctabox">
-      <div class="cgrid">
-        <div>
-          <p class="kicker">寻找合作伙伴</p>
-          <h2>一起把这条链建起来。</h2>
-          <p>我们正在与卫星制造商和发射服务商、地面站与定标场伙伴、卫星数据供应商，以及希望从卫星数据中获得答案的银行、保险公司和农业企业洽谈合作。</p>
-          <div class="mailrow">
-            <code>aila@alyaspace.com</code>
-            <button type="button" class="btn light" data-copy>复制邮箱</button>
-          </div>
-          <div class="btns"><a class="btn line" href="../">English</a></div>
-        </div>
-        <form id="contact-form" class="cform">
-          <div class="row">
-            <label>姓名<input name="name" required autocomplete="name"></label>
-            <label>邮箱<input name="email" type="email" required autocomplete="email"></label>
-          </div>
-          <label>机构<input name="org" autocomplete="organization"></label>
-          <label>留言<textarea name="message" required></textarea></label>
-          <input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <button type="submit" class="btn light">发送</button>
-          <p class="form-msg" role="status"></p>
-        </form>
-      </div>
+    <div class="scalebar" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="calib">
+      <h2>晴空下的定标场</h2>
+      <div class="body"><p>定标场位于巴西东北部半干旱区的图卡诺站址，全年云量少，可安排的过境观测次数多。</p><p>光学传感器用地面反射靶标定标，SAR 雷达用角反射器定标。定标场服务我们自己的卫星，也可以为其他运营商提供定标服务。</p></div>
+      <figure class="calib-plate frame"><svg viewBox="0 0 1200 420" role="img" aria-label="示意图 · 非按比例">
+<defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1E3A40" stroke-width="1"/></pattern></defs>
+<rect width="1200" height="420" fill="url(#g)"/>
+<path d="M60 196 L1140 36" stroke="#51BAC1" stroke-width="1.5" stroke-dasharray="6 8" fill="none"/>
+<text class="lbl" x="980" y="96" fill="#51BAC1" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="15" letter-spacing="1">卫星过境</text>
+<g transform="translate(160 220)">
+<rect x="0" y="0" width="70" height="70" fill="#F2F5F4"/><rect x="80" y="0" width="70" height="70" fill="#B9CBC9"/><rect x="160" y="0" width="70" height="70" fill="#7F9A98"/><rect x="240" y="0" width="70" height="70" fill="#2C5158"/>
+<path d="M0 100 H310" stroke="#51BAC1" stroke-width="1"/><path d="M0 95 v10 M310 95 v10" stroke="#51BAC1" stroke-width="1"/>
+<text class="lbl" x="0" y="132" fill="#B9CBC9" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="16">光学反射靶标</text></g>
+<g transform="translate(700 230)" fill="none" stroke="#F2F5F4" stroke-width="1.5">
+<path d="M0 60 L30 0 L60 60 Z"/><path d="M110 60 L140 0 L170 60 Z"/><path d="M220 60 L250 0 L280 60 Z"/>
+<path d="M30 0 V60 M140 0 V60 M250 0 V60" stroke="#51BAC1" stroke-width="1"/>
+<path d="M0 90 H280" stroke="#51BAC1" stroke-width="1"/><path d="M0 85 v10 M280 85 v10" stroke="#51BAC1" stroke-width="1"/>
+<text class="lbl" x="0" y="122" fill="#B9CBC9" stroke="none" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="16">SAR 角反射器</text></g>
+<text class="lbl" x="28" y="44" fill="#7F9A98" font-family="Space Grotesk, Noto Sans SC, sans-serif" font-size="13" letter-spacing="1.5">示意图 · 非按比例</text>
+</svg><figcaption class="calib-legend"><span><i class="sw t"></i>光学反射靶标</span><span><i class="sw r"></i>SAR 角反射器</span><span><i class="sw p"></i>卫星过境</span><span>示意图 · 非按比例</span></figcaption></figure>
     </div>
   </div>
 </section>
+
+<!-- ============ FIELD: AgriEasy ============ -->
+<section class="sec field" id="field">
+  <div class="wrap"><div class="scalebar" aria-hidden="true"><i></i><i></i><i></i><i></i></div></div>
+  <div class="wrap grid12">
+    <div class="globe"><img src="../assets/agrieasy-globe.jpg" alt="AgriEasy 农易：从太空到你的农场，卫星数据经 AI 分析，提示土壤、水、气候、生产与信贷。" loading="lazy"></div>
+    <div class="side">
+      <h2>从影像到结论</h2>
+      <p style="color:var(--ink-2);margin-top:22px">AgriEasy 农易在香港研发：把卫星影像和气象数据交给 AI 分析，再给中小农户推送作物提示。农户免费使用，银行、保险公司和出口商按面积付费。</p>
+      <div class="channels"><span><b>微信</b> · 中国</span><span><b>WhatsApp</b> · 巴西</span><span><b>短信</b> · 通用</span></div>
+      <ul class="index"><li><b>农业</b><span>出苗率、种植边界、长势（NDVI）、土壤湿度、产量与成熟期</span></li><li><b>林业与碳汇</b><span>树木计数、森林覆盖与健康、EUDR 毁林核查、碳汇监测</span></li><li><b>矿业与地质</b><span>矿区持续监测、地面沉降、地质灾害前后对比</span></li><li><b>灾害</b><span>山火识别与火源分析、保险灾后损失核查</span></li><li><b>海洋</b><span>船只检测、海岸线变化、养殖浮筏、赤潮绿潮</span></li><li><b>城市与资产</b><span>施工进度、原油储量估算、机场动态、城市三维重建</span></li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROOF: pilots ============ -->
+<section class="sec" id="proof">
+  <div class="wrap">
+    <div class="sec-head"><h2>10 个试点项目已交付</h2><p>每个试点都走完了完整流程：采集数据、分析、编写报告、交付，全部使用中国卫星数据。现在我们正把这套流程开发成自动化平台。</p></div>
+    <div class="pilots"><article class="pilot"><div class="frame"><img src="../assets/farmland.jpg" alt="" loading="lazy"></div><div class="txt"><h3>咖啡种植园</h3><p>对比 4 年前与当前影像，证明没有毁林。报告符合欧盟毁林法规（EUDR），也可提交给贷款方。</p><table class="spec"><tbody><tr><th scope="row">行业</th><td>出口合规</td></tr><tr><th scope="row">数据</th><td>光学影像，相隔四年</td></tr><tr><th scope="row">交付</th><td>EUDR 毁林核查报告</td></tr></tbody></table></div></article><article class="pilot"><div class="frame"><img src="../assets/orbit-dunes.jpg" alt="" loading="lazy"></div><div class="txt"><h3>碳信用</h3><p>对低收入农业社区补种的原生树进行卫星计数与监测，报告成为碳信用买家认可的核查文件。</p><table class="spec"><tbody><tr><th scope="row">行业</th><td>碳市场</td></tr><tr><th scope="row">数据</th><td>光学影像，逐棵计数</td></tr><tr><th scope="row">交付</th><td>供碳信用买家使用的核查报告</td></tr></tbody></table></div></article><article class="pilot"><div class="frame"><img src="../assets/mine.jpg" alt="" loading="lazy"></div><div class="txt"><h3>矿区监测</h3><p>为巴西一个大型矿区按月持续监测，协调多家卫星运营商的数据，按时交付。</p><table class="spec"><tbody><tr><th scope="row">行业</th><td>矿业，巴西</td></tr><tr><th scope="row">数据</th><td>多家运营商的光学数据</td></tr><tr><th scope="row">交付</th><td>每月监测报告</td></tr></tbody></table></div></article></div>
+    <p class="note">客户名称受保密协议约束，不予公开。图片仅作示意。</p>
+    <div class="contact-sheet"><figure class="frame"><img src="../assets/orbit-pivots.jpg" alt="中心支轴喷灌" loading="lazy"><figcaption><span>影像 A</span><span>中心支轴喷灌</span></figcaption></figure><figure class="frame"><img src="../assets/orbit-dam.jpg" alt="水坝与水库" loading="lazy"><figcaption><span>影像 B</span><span>水坝与水库</span></figcaption></figure><figure class="frame"><img src="../assets/orbit-dunes.jpg" alt="沙丘与潟湖" loading="lazy"><figcaption><span>影像 C</span><span>沙丘与潟湖</span></figcaption></figure><figure class="frame"><img src="../assets/orbit-fields.jpg" alt="农田拼块" loading="lazy"><figcaption><span>影像 D</span><span>农田拼块</span></figcaption></figure></div>
+  </div>
+</section>
+
+<!-- ============ TIMELINE ============ -->
+<section class="sec" id="timeline">
+  <div class="wrap">
+    <div class="sec-head"><h2>七年的前期积累</h2></div>
+    <ol class="ledger"><li class=""><span class="yr">2019</span><b>Alya Space 在巴西成立</b><span>获巴西空军 Amazonia 4.0 挑战赛冠军</span><span class="st">已完成</span></li><li class=""><span class="yr">2020</span><b>与巴西空军合作两年</b><span>在 IEAv / DCTA 驻所验证</span><span class="st">已完成</span></li><li class=""><span class="yr">2022</span><b>巴黎国际宇航大会发表论文</b><span>International Astronautical Congress (IAC)</span><span class="st">已完成</span></li><li class=""><span class="yr">2023–24</span><b>星座完成设计并申报</b><span>Jianguo Chai、Ruoyu Li 加入；Alya Nanosatellites 在巴黎成立；经 ANATEL 向 ITU 申报；G20 航天会议演讲</span><span class="st">已完成</span></li><li class=""><span class="yr">2025</span><b>玉航天在香港成立</b><span>入选 Microsoft × HKSTP 共创计划</span><span class="st">已完成</span></li><li class="now"><span class="yr">2026</span><b>10 个试点项目交付</b><span>巴西和非洲的矿业、咖啡、碳汇与土地项目；InnoCarnival 2026 香港太空展区</span><span class="st">已完成</span></li><li class="plan"><span class="yr">2027</span><b>卫星、地面站与定标场合作伙伴</b><span>与合作伙伴一起推进首批卫星和图卡诺地面站</span><span class="st">计划中</span></li><li class="plan"><span class="yr">2027</span><b>农易最小可用版本</b><span>卫星数据、AI 分析与提示推送，首批试用用户</span><span class="st">计划中</span></li><li class="plan"><span class="yr">2027</span><b>首个付费客户</b><span>保险公司或银行，按面积付费</span><span class="st">计划中</span></li><li class="plan"><span class="yr">2028</span><b>首次卫星发射</b><span>星座首批卫星的发射目标</span><span class="st">目标</span></li></ol>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section class="sec" id="team">
+  <div class="wrap">
+    <div class="sec-head"><h2>团队</h2><p>Aila、Jianguo Chai 和 Ruoyu Li 自 2023 年起一起交付了全部试点项目；Rhea 负责把这套流程做成 AI 平台。</p></div>
+    <div class="team"><article class="person"><img src="../assets/team-aila.jpg" alt="Aila Raquel" loading="lazy"><h3>Aila Raquel</h3><p class="role">创始人兼 CEO</p><p>Alya Space、Alya Nanosatellites 与玉航天创始人，负责星座设计；巴西空军 Amazonia 4.0 挑战赛冠军。</p></article><article class="person"><img src="../assets/team-chai.jpg" alt="Jianguo Chai" loading="lazy"><h3>Jianguo Chai</h3><p class="role">CTO · 卫星与地面系统</p><p>主持尼日利亚、委内瑞拉、巴基斯坦、阿尔及利亚等 20 多个卫星项目的地面站建设。</p></article><article class="person"><img src="../assets/team-rhea.jpg" alt="Rhea Lau" loading="lazy"><h3>Rhea Lau</h3><p class="role">CTO · GeoAI</p><p>地球物理与机器学习背景；斯伦贝谢（SLB）机器学习研究，奥雅纳（Arup）、辉固（Fugro）香港。负责 AI 平台研发。</p></article><article class="person"><img src="../assets/team-li.jpg" alt="Ruoyu Li" loading="lazy"><h3>Ruoyu Li</h3><p class="role">COO · 遥感与数据融合</p><p>遥感工程师，新加坡国立大学应用地理信息系统硕士；多源卫星与无人机数据处理。</p></article></div>
+    <figure class="wide-photo" style="margin:0">
+      <div class="frame"><img src="../assets/event-hk.jpg" alt="玉航天在 InnoCarnival 2026 香港太空展区" loading="lazy"></div>
+      <figcaption class="cap"><span>香港</span><b>InnoCarnival 2026 太空展区</b></figcaption>
+    </figure>
+    <div class="crew"><figure><div class="frame"><img src="../assets/event-1.jpg" alt="团队参加航天行业活动" loading="lazy"></div></figure><figure><div class="frame"><img src="../assets/event-2.jpg" alt="团队在 Alya Space 展位" loading="lazy"></div></figure><figure><div class="frame"><img src="../assets/event-3.jpg" alt="与合作伙伴合影" loading="lazy"></div></figure></div>
+    <div class="marks"><span>Microsoft × HKSTP 共创计划</span><span>巴西空军 IEAv / DCTA</span><span>Amazonia 4.0 挑战赛冠军</span><span>巴伊亚州政府</span><span>2022 巴黎国际宇航大会</span><span>2024 G20 航天会议</span></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap grid12">
+    <div class="left">
+      <h2>一起把这条链建起来</h2>
+      <p>我们正在与卫星制造商和发射服务商、地面站与定标场伙伴、卫星数据供应商，以及希望从卫星数据中获得答案的银行、保险公司和农业企业洽谈合作。</p>
+      <div class="mailrow"><code>aila@alyaspace.com</code><button type="button" data-copy>复制邮箱</button></div>
+    </div>
+    <form id="contact-form" class="cform">
+      <div class="row">
+        <label>姓名<input name="name" required autocomplete="name"></label>
+        <label>邮箱<input name="email" type="email" required autocomplete="email"></label>
+      </div>
+      <label>机构<input name="org" autocomplete="organization"></label>
+      <label>留言<textarea name="message" required></textarea></label>
+      <input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" class="btn">发送 <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></button>
+      <p class="form-msg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
 
 <footer>
   <div class="wrap">
